@@ -8,7 +8,6 @@
 }
 
 body{
-    /* background-color: #262936; */
     background: #262936;
     display: flex;
     align-items: center;
@@ -22,9 +21,9 @@ body{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 768px;
+    width: 800px;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 600px;
 }
 
 .container p{
@@ -143,6 +142,11 @@ body{
     height: 40px;
 }
 
+.social-icons a:hover {
+    background-color: #adadad;
+    transition: .3s ease;
+}
+
 .toggle-container{
     position: absolute;
     top: 0;
@@ -206,83 +210,76 @@ body{
     transform: translateX(200%);
 }
 
-       /* register */
- /* .form-container form button {
-   border-radius: 20px;
-   border: 1px solid #FF4B2B;
-   background-color: #FF4B2B;
-   color: #FFFFFF;
-   font-size: 12px;
-   font-weight: bold;
-   padding: 12px 45px;
-   letter-spacing: 1px;
-   text-transform: uppercase;
-   transition: transform 80ms ease-in;
- }
-     
- .form-container form button:active {
-   transform: scale(0.95);
- }
-     
- .form-container form button:focus {
-   outline: none;
- }
-     
- .form-container form button.ghost {
-   background-color: transparent;
-   border-color: #FFFFFF;
- }
-     
- form {
-   background-color: #FFFFFF;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   padding: 0 0px; 
-   height: 100%;
-   text-align: center;
- }
- .form-container form h1{
-   color: #000;
-   margin: 0px;
-   padding-bottom: 15px;
- }    
- .form-container form input {
-   background-color: #eee;
-   border: none;
-   padding: 12px 15px;
-   margin: 8px 0;
-   width: 100%;
- }
- .container_reg {
-   background-color: #fff;
-   border-radius: 10px;
-   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-     0 10px 10px rgba(0, 0, 0, 0.22);
-   position: relative;
-   overflow: hidden;
-   width: 500px;
-   max-width: 100%;
-   min-height:400px; 
- }
- .form-container {
-   position: absolute;
-   top: 0;
-   height: 100%;
-   transition: all 0.6s ease-in-out;
- }
- .container_reg.right-panel-active .sign-up-container {
-   transform: translateX(100%);
-   opacity: 1;
-   z-index: 5;
-   animation: show 0.6s;
- }
- .sign-up-container {
-   left: 0;
-   width: 100%;
-   z-index: 1;
-   padding: 10px;
- }   */
+.form-container input[name="gender"]{
+    display: inline-block;
+}
+.gender {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+.gender input{
+    cursor: pointer;
+    margin-right: 5px;
+}
+.gender label{
+    cursor: pointer;
+    margin-right: 20px;
+}
+.btn{
+    margin: 8px;
+}
+.btn span{
+    font-size: 16px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+label input[type="checkbox"] ~ i.fa.fa-square-o{
+  color: #9453fd;    display: inline;
+}
+label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+  display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+  display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+  color: #5364fd;   
+  display: inline;
+}
+label:hover input[type="checkbox"] ~ i.fa {
+  color: #6453fd;
+}
 
-  
+/*Underline when hover*/
+
+.underliner:hover {
+    text-decoration: underline;
+}
+
+/*Animation for button*/
+
+.animation-black {
+    background: linear-gradient(to left, #1e202b 50%, #adadad 50%) right;
+    background-size: calc(200% + 8px);
+    transition: all .3s ease;
+}
+
+.animation-black:hover {
+    color: #1e202b;
+    background-position: calc(0% - 1px);
+}
+
+.animation-white {
+    background: linear-gradient(to left, #fff 50%, black 50%) right;
+    background-size: calc(200% + 8px) calc(100% + 8px);
+    transition: all .3s ease;
+    color: #1e202b;
+    background-repeat: no-repeat;
+}
+
+.animation-white:hover {
+    color: #fff !important;
+    background-position: calc(0% - 1px);
+}

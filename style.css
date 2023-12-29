@@ -1722,5 +1722,89 @@ form textarea {
   color: #2d2c2c;
   margin-top: 5px;
 }
+/* For login animation button */
+
+.login-item {
+  float: left;
+  margin-left: 10px; 
+}
+
+ .login-item a {
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    font-weight: 400;
+    background-color: #009ad8;
+  }
+  
+  /* For animation button */
+  
+.animation-item-button:hover a {
+    transition: .3s ease;
+    background-color: #0087bc;
+  }
+
+  .animation-item:hover{
+    transition: .3s ease;
+    background-color: #0087bc;
+  }
+
+  /* animation */
+
+.weather-anim {
+    top: 110%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+
+.weather-anim img {
+    width: 100px;
+    opacity: 0;
+    animation: weather 7s linear infinite;
+}
+
+@keyframes weather {
+    0%{
+        transform: translateY(-20vh);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    70%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.weather-anim img:nth-child(1){
+    animation-delay: 1s;
+}
+.weather-anim img:nth-child(2){
+    animation-delay: 2s;
+}
+.weather-anim img:nth-child(3){
+    animation-delay: 0s;
+}
+.weather-anim img:nth-child(4){
+    animation-delay: 4s;
+}
+.weather-anim img:nth-child(5){
+    animation-delay: 3s;
+}
+.weather-anim img:nth-child(6){
+    animation-delay: 5s;
+}
+.weather-anim img:nth-child(7){
+    animation-delay: 3.5s;
+}
 
 
