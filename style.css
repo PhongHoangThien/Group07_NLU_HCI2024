@@ -1774,10 +1774,10 @@ form textarea {
         opacity: 0;
     }
     50%{
-        opacity: 0.5;
+        opacity: 0.4;
     }
     70%{
-        opacity: 0.5;
+        opacity: 0.4;
     }
     100%{
         transform: translateY(-80vh);
@@ -1788,25 +1788,25 @@ form textarea {
 
 
 .weather-anim img:nth-child(1){
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 .weather-anim img:nth-child(2){
-  animation-delay: 10s;
-}
-.weather-anim img:nth-child(3){
-  animation-delay: 2s;
-}
-.weather-anim img:nth-child(4){
-  animation-delay: 8s;
-}
-.weather-anim img:nth-child(5){
-  animation-delay: 14s;
-}
-.weather-anim img:nth-child(6){
   animation-delay: 6s;
 }
+.weather-anim img:nth-child(3){
+  animation-delay: 1s;
+}
+.weather-anim img:nth-child(4){
+  animation-delay: 5s;
+}
+.weather-anim img:nth-child(5){
+  animation-delay: 2s;
+}
+.weather-anim img:nth-child(6){
+  animation-delay: 7s;
+}
 .weather-anim img:nth-child(7){
-  animation-delay: 12s;
+  animation-delay: 4s;
 }
 
 
