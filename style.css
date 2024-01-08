@@ -1763,9 +1763,9 @@ form textarea {
 }
 
 .weather-anim img {
-    width: 100px;
+    width: 110px;
     opacity: 0;
-    animation: weather 7s linear infinite;
+    animation: weather 10s linear infinite;
 }
 
 @keyframes weather {
@@ -1773,19 +1773,17 @@ form textarea {
         transform: translateY(-20vh);
         opacity: 0;
     }
-    50%{
-        opacity: 0.4;
+    35%{
+        opacity: 0.5;
     }
     70%{
-        opacity: 0.4;
+        opacity: 0.6;
     }
     100%{
         transform: translateY(-80vh);
         opacity: 0;
     }
 }
-
-
 
 .weather-anim img:nth-child(1){
   animation-delay: 3s;
@@ -1797,16 +1795,7 @@ form textarea {
   animation-delay: 1s;
 }
 .weather-anim img:nth-child(4){
-  animation-delay: 5s;
-}
-.weather-anim img:nth-child(5){
-  animation-delay: 2s;
-}
-.weather-anim img:nth-child(6){
   animation-delay: 7s;
-}
-.weather-anim img:nth-child(7){
-  animation-delay: 4s;
 }
 
 
