@@ -264,7 +264,7 @@ form textarea {
   color: white; }
 
 .map {
-  height: 220px; }
+  height: 300px; }
 
 .container {
   margin-right: auto;
@@ -1114,7 +1114,14 @@ form textarea {
  * Header Styles
  */
 .site-header {
-  padding: 50px 0; }
+  padding: 30px 0; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f1d1d;
+  z-index: 1000; 
+}
   .site-header .branding {
     float: left; }
     .site-header .branding .logo, .site-header .branding .logo-type {
@@ -1212,7 +1219,9 @@ form textarea {
 
 .find-location {
   position: relative;
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  padding-top: 100px;
+}
   .find-location input[type="text"] {
     width: 100%;
     padding: 20px 50px 20px 20px;
@@ -1220,9 +1229,9 @@ form textarea {
     color: white; }
   .find-location input[type="submit"] {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
+    top: 110px;
+    right: 8px;
+    bottom: 8px;
     padding: 0 40px; }
 
 .forecast-container {
@@ -1233,7 +1242,7 @@ form textarea {
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
-  margin-top: -150px;
+  margin-top: -80px;
   margin-bottom: 50px; }
   .forecast-container .forecast {
     display: table-cell;
@@ -1533,6 +1542,10 @@ form textarea {
     font-weight: 300; }
     .photo .photo-title a {
       color: white; }
+
+  .photo-details h3 {
+    font-weight: bold;
+  }
 
 .star-rating {
   float: none;
