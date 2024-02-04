@@ -38,12 +38,13 @@
 					<div class="main-navigation">
 						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
 						<ul class="menu">
-							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="home.html">Home</a></li>
 							<li class="menu-item"><a href="news.html">News</a></li>
-							<li class="menu-item"><a href="live-cameras.html">Live cameras</a></li>
-							<li class="menu-item"><a href="photos.html">Photos</a></li>
+							<li class="menu-item"><a href="technical.html">Technical</a></li>
 							<li class="menu-item current-menu-item"><a href="contact.html">Contact</a></li>
+							<li class="menu-item"><a href="project.html">Project</a></li>
 							<li class="menu-item"><a href="about.html">About</a></li>
+							<li class="menu-item"><a href="style-guide.html">Style guide</a></li>
 							<li class="login-item animation-item-button"><a href="login.html">Login</a></li>
 						</ul> <!-- .menu -->
 					</div> <!-- .main-navigation -->
@@ -74,8 +75,8 @@
 										Khoa công nghệ thông tin</p>
 									</address>
 									
-									<a href="#"><img src="images/icon-phone.png" alt="">0900000000</a>
-									<a href="#"><img src="images/icon-envelope.png" alt="">contact@companyname.com</a>
+									<a href="#"><img src="images/icon-phone.png" alt="">0939395191</a>
+									<a href="#"><img src="images/icon-envelope.png" alt="">thoai2409@gmail.com</a>
 								</div>
 							</div>
 						</div>
@@ -85,16 +86,16 @@
 								 cùng với email và lời nhắn của bạn, chúng tôi sẽ nhanh chóng phản hồi cho bạn qua email...</p>
 							<form action="#" class="contact-form">
 								<div class="row">
-									<div class="col-md-6"><input type="text" placeholder="Tên của bạn là..."></div>
-									<div class="col-md-6"><input type="text" placeholder="Email..."></div>
+								<div class="col-md-6" ><input name="username" type="text" placeholder="Tên của bạn là..."></div>
+									<div class="col-md-6" ><input name="useremail" type="text" placeholder="Email..."></div>
 								</div>
 								<div class="row">
-									<div class="col-md-6"><input type="text" placeholder="Số điện thoại"></div>
-									<div class="col-md-6"><input type="text" placeholder="Website..."></div>
+									<div class="col-md-6" ><input name="usernumber" type="text" placeholder="Số điện thoại"></div>
+									<div class="col-md-6" ><input name="useraddress" type="text" placeholder="Website..."></div>
 								</div>
-								<textarea name="" placeholder="Message..."></textarea>
+								<textarea name="usermessage" placeholder="Message..."></textarea>
 								<div class="text-right">
-									<input type="submit" placeholder="Send message" class="animation-item">
+									<input onclick="sendmsg" type="submit" placeholder="Send message" class="animation-item">
 								</div>
 							</form>
 
@@ -136,6 +137,17 @@
 				</div>
 			</footer> <!-- .site-footer -->
 		</div>
+
+		<script>
+			function sendmsg{
+			document.querySelector("input[name='username']").value = "";
+			document.querySelector("input[name='useraddress']").value = "";
+			document.querySelector("input[name='usernumber']").value = "";
+			document.querySelector("input[name='useremail']").value = "";
+			document.querySelector("input[name='usermessage']").value = "";
+		
+		}
+	</script>
 		
 	</body>
 

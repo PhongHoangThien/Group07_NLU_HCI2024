@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <title>Technical</title>
+</head>
+<body>
+    <div class="site-content">
+        <div class="site-header">
+            <div class="container">
+                <a href="index.html" class="branding">
+                    <img src="images/logo.png" alt="" class="logo">
+                    <div class="logo-type">
+                        <h1 class="site-title">Nhóm 7</h1>
+                        <small class="site-description">Dự báo thời tiết</small>
+                    </div>
+                </a>
+
+                <!-- Default snippet for navigation -->
+                <div class="main-navigation">
+                    <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                    <ul class="menu">
+                        
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="news.html">News</a></li>
+                        <li class="menu-item current-menu-item"><a href="technical.html">Technical</a></li>
+                        <li class="menu-item"><a href="contact.html">Contact</a></li>
+                        <li class="menu-item"><a href="project.html">Project</a></li>
+                        <li class="menu-item"><a href="about.html">About</a></li>
+                        <li class="menu-item"><a href="style-guide.html">Style guide</a></li> 
+                        <li class="login-item animation-item-button"><a href="login.html">Login</a></li>
+                    </ul> <!-- .menu -->
+                </div> <!-- .main-navigation -->
+
+                <div class="mobile-navigation"></div>
+
+            </div>
+        </div> <!-- .site-header -->
+
+        <main class="main-content">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>Technical</span>
+                </div>
+            </div>
+            <div class="fullwidth-block">
+                <div class="container">
+                    <div class="technical">
+                <h1>TECHNICAL</h1>
+                <h3>Hướng dẫn sử dụng Firebase</h3>
+                <h5>Firebase là gì ?</h5>
+                <p>
+                    <strong>Khái niệm: </strong>
+                    Firebase là một dịch vụ cơ sở dữ liệu thời gian thực được cung cấp bởi Google và hoạt động trên nền tảng đám mây. Nó giúp các lập trình phát triển nhanh các ứng dụng di động bằng cách đơn giản hóa các thao tác với cơ sở dữ liệu. 
+                </p>
+                <h3>Cách đăng ký tài khoản Firebase </h3>
+                <p>
+                    Để đăng ký tài khoản trên Firebase, hãy mở <a href="https://firebase.google.com/">https://firebase.google.com/</a> , và bấm vào "Bắt đầu."
+                </p>
+                <img src="./images/modify/pic1.png" alt="pic1">
+                <p>
+                    Sau đó, bạn cần tạo tài khoản Google hoặc sử dụng tài khoản hiện có. Sau khi hoàn thành bước đầu tiên, bạn sẽ đến bảng điều khiển Firebase. Bước tiếp theo là tạo một dự án.
+                </p>
+                <h3>Cách tạo dự án trên Firebase</h3>
+                <p>Để tạo một dự án, bạn phải thực hiện 3 bước đơn giản:</p>
+                <p>1. Nhấp vào "Thêm dự án" và đặt tên cho nó trong cửa sổ mới.</p>
+                <img src="./images/modify/pic2.png" alt="pic2">
+                <p>2. Bật hoặc tắt chức năng Google Analytics cho dự án và nhấp vào "Tạo dự án"</p>
+                <img src="./images/modify/pic3.jpg" alt="pic3" >
+                <p>Sau một vài phút, dự án của bạn sẽ được tạo.</p>
+                <h3>Cách sử dụng Firebase miễn phí</h3>
+                <p>Gói Spark là gói miễn phí không có bất kỳ chi phí hàng tháng nào . Nó có một số hạn chế, nhưng như vậy là quá đủ để bắt đầu dự án của bạn, đặc biệt nếu bạn định sử dụng nó làm nền tảng lưu trữ cho trang web tĩnh của mình.</p>
+                <img src="./images/modify/pic4.jpg" alt="pic4" style="width: 50%;">
+                <h3>Cách thiết lập dịch vụ lưu trữ Firebase</h3>
+                <p>Thiết lập lưu trữ Firebase cũng khá đơn giản. Đăng nhập vào tài khoản của bạn và chọn dự án của bạn. Sau đó, trong menu bên trái, nhấp vào "Xây dựng" và chọn "Lưu trữ" từ danh sách thả xuống.</p>
+                <img src="./images/modify/pic5.jpg" alt="pic5" style="width: 50%;">
+                <p>Trong cửa sổ mới, bạn sẽ thấy màn hình chào mừng. Nhấp vào "Bắt đầu."</p>
+                <img src="./images/modify/pic6.jpg" alt="pic6" style="width: 50%;">
+                <p>
+                    Để lưu trữ dự án của bạn, trước tiên bạn cần thiết lập Firebase CLI. <br>
+                    Mở cửa sổ đầu cuối của bạn và nhập lệnh sau: <br>
+                    npm install -g firebase-tools <br>
+                    Sau khi thiết lập xong, hãy nhập nội dung sau vào thiết bị đầu cuối của bạn: <br>
+                    firebase login <br>
+
+                    Nó sẽ đưa bạn đến màn hình đăng nhập để cấp quyền truy cập. <br>
+                    Bước tiếp theo là điều hướng đến thư mục dự án của bạn bên trong cửa sổ đầu cuối, nơi bạn đã lưu trữ trang web tĩnh của mình. <br>
+                    Chạy lệnh sau: <br>
+                    firebase init
+                </p>
+                <img src="./images/modify/pic7.jpg" alt=""style="width: 40%;">
+                <p>Tiếp theo, chọn một tài khoản từ danh sách và nhấn enter.</p>
+                <img src="./images/modify/pic8.jpg" alt=""style="width: 40%;">
+                <p>Theo mặc định, thư mục chung được đặt thành "công khai". Nếu bạn muốn chỉ định một thư mục khác, bạn có thể làm như vậy trong bước tiếp theo. Ví dụ: dự án Next.js của tôi tạo phiên bản tĩnh của trang web trong thư mục 'out', vì vậy tôi chỉ định nó ở bước này.</p>
+                <img src="./images/modify/pic9.jpg" alt="" style="width: 30%;">
+                <p>Chúng tôi đã hoàn tất việc thiết lập. Bây giờ, đã đến lúc triển khai dự án của chúng tôi lên Firebase.</p>
+                <p>Trong cửa sổ terminal, bên trong thư mục dự án của bạn, hãy nhập lệnh sau: <br>
+                     firebase deploy --only hosting</p>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1>SUBSCRIBE FOR DAILY WEATHER NEWS AND MORE</h1>
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Enter your email to subscribe...">
+                            <input type="submit" value="Subscribe" class="animation-item">
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </footer> <!-- .site-footer -->
+    </div>        
+    <script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
